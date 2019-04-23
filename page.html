@@ -9,15 +9,75 @@
 
 <html>
   <head>
-    <title></title>
+    <title>Minimalist Editor</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
 
-      <h1>This is my page. There are many like it, but this one is mine</h1>
+  	  <!-- Used code from w3schools to help implement the two column layout. 
+  	  	https://www.w3schools.com/howto/howto_css_two_columns.asp -->
+      <div class="row">
+
+      	<div class="column">
+
+      		<div><strong>Fonts</strong></div>
+
+      		<div>
+	      		<!-- Combo Box for font picking. -->
+	      		<select>
+	  				<option value="times_new_roman">Times New Roman</option>
+	  				<option value="arial">Arial</option>
+	  				<option value="arial_black">Arial Black</option>
+	  				<option value="calibri">Calibri</option>
+				</select>
+
+				<!-- Combo Box for picking font styles -->
+				<select>
+	  				<option value="regular">Regular</option>
+	  				<option value="bold">Bold</option>
+	  				<option value="italic">Italic</option>
+	  				<option value="calibri">Calibri</option>
+				</select>
+
+				<!-- Combo Box for picking font sizes -->
+				<select>
+	  				<option value="size1">8</option>
+	  				<option value="size2">9</option>
+	  				<option value="size3">10</option>
+	  				<option value="size4">11</option>
+	  				<option value="size5">12</option>
+	  				<option value="size6">14</option>
+	  				<option value="size7">16</option>
+	  				<option value="size8">18</option>
+	  				<option value="size9">20</option>
+	  				<option value="size10">24</option>
+	  				<option value="size11">26</option>
+	  				<option value="size12">28</option>
+	  				<option value="size13">32</option>
+	  				<option value="size14">48</option>
+	  				<option value="size15">72</option>
+				</select>
+		    </div>
+
+		    <div>
+		    	<button><strong>X_2</strong></button>
+		    	<button><strong>X^2</strong></button>
+
+		    </div>
+
+      	</div>
+
+      	<div class="column">
+
+      		<div><strong>Styles</strong></div>
+
+      	</div>
+
+      </div>
 
   </body>
 </html>
