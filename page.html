@@ -24,7 +24,9 @@
 
       	<div class="column">
 
-      		<div><strong>Fonts</strong></div>
+      		<div>
+      			<strong>Fonts</strong>
+      		</div>
 
       		<div>
 	      		<!-- Combo Box for font picking. -->
@@ -40,7 +42,6 @@
 	  				<option value="regular">Regular</option>
 	  				<option value="bold">Bold</option>
 	  				<option value="italic">Italic</option>
-	  				<option value="calibri">Calibri</option>
 				</select>
 
 				<!-- Combo Box for picking font sizes -->
@@ -66,14 +67,75 @@
 		    <div>
 		    	<button><strong>X_2</strong></button>
 		    	<button><strong>X^2</strong></button>
+		    </div>
 
+		    <div>
+		    	<button><strong>Horizontal Alignment</strong></button>
+		    	<button><strong>Vertical Alignment</strong></button>
+		    </div>
+
+		    <div>
+		    	<button><strong>Bullet Style</strong></button>
+		    	<!-- Below is the code for bullet indentation. -->
+		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Bullet_Indent">
+		    	<!-- Below is the code for indenting bulletted text. -->
+		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Indent_Bullet_Text">
+		    </div>
+
+		    <div>
+		    	<!-- Below is the code for space before paragraph. -->
+		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Space_Before_Paragraph">
+		    	<!-- Below is the code for space after paragraph. -->
+		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Space_After_Paragraph">
+		    	<!-- Below is the code for indentation. -->
+		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Indentation">
 		    </div>
 
       	</div>
 
       	<div class="column">
 
-      		<div><strong>Styles</strong></div>
+      		<div>
+      			<strong>Styles</strong>
+      		</div>
+
+      		<div>
+      			<button>Background Color</button>
+      		</div>
+
+      		<div>
+      			<!-- Combo Box for text color picking. -->
+	      		<select>
+	  				<option value="text_color">Text Color</option>
+				</select>
+
+				<!-- Combo Box for style color picking. -->
+	      		<select>
+	  				<option value="style_color">Style Color</option>
+				</select>
+
+				<!-- Combo Box for ligtures. -->
+	      		<select>
+	  				<option value="ligtures">Ligtures</option>
+				</select>
+      		</div>
+
+      		<div>
+      			<!-- Combo Box for text color picking. -->
+	      		<select>
+	  				<option value="hyphenation">Hyphenation</option>
+	  				<option value="hyphenation_yes">Yes</option>
+	  				<option value="hyphenation_no">No</option>
+				</select>
+
+				<!-- Combo Box for styles such as underline, strikethrough, none. -->
+	      		<select>
+	  				<option value="text_styles">Underline</option>
+				</select>
+
+      			<!-- Below is the code for line spacing. -->
+		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Line_Spacing">
+      		</div>
 
       	</div>
 
