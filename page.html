@@ -28,7 +28,7 @@
       			<strong>Fonts</strong>
       		</div>
 
-      		<div>
+      		<div class="section">
 	      		<!-- Combo Box for font picking. -->
 	      		<select>
 	  				<option value="times_new_roman">Times New Roman</option>
@@ -64,31 +64,36 @@
 				</select>
 		    </div>
 
-		    <div>
+		    <div class="section">
 		    	<button><strong>X_2</strong></button>
 		    	<button><strong>X^2</strong></button>
 		    </div>
 
-		    <div>
+		    <div class="section">
 		    	<button><strong>Horizontal Alignment</strong></button>
 		    	<button><strong>Vertical Alignment</strong></button>
 		    </div>
 
-		    <div>
+		    <div class="section">
 		    	<button><strong>Bullet Style</strong></button>
 		    	<!-- Below is the code for bullet indentation. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Bullet_Indent">
+		    	<label for="Bullet_Indent">Bullet Indent</label>
 		    	<!-- Below is the code for indenting bulletted text. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Indent_Bullet_Text">
+		    	<label for="Indent_Bullet_Text">Indent Bulleted Text</label>
 		    </div>
 
-		    <div>
+		    <div class="section">
 		    	<!-- Below is the code for space before paragraph. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Space_Before_Paragraph">
+		    	<label for="Space_Before_Paragraph">Space Before Paragraph</label>
 		    	<!-- Below is the code for space after paragraph. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Space_After_Paragraph">
+		    	<label for="Space_After_Paragraph">Space After Paragraph</label>
 		    	<!-- Below is the code for indentation. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Indentation">
+		    	<label for="Indentation">Indentation</label>
 		    </div>
 
       	</div>
@@ -99,11 +104,11 @@
       			<strong>Styles</strong>
       		</div>
 
-      		<div>
+      		<div class="section">
       			<button>Background Color</button>
       		</div>
 
-      		<div>
+      		<div class="section">
       			<!-- Combo Box for text color picking. -->
 	      		<select>
 	  				<option value="text_color">Text Color</option>
@@ -120,7 +125,7 @@
 				</select>
       		</div>
 
-      		<div>
+      		<div class="section">
       			<!-- Combo Box for text color picking. -->
 	      		<select>
 	  				<option value="hyphenation">Hyphenation</option>
@@ -131,10 +136,12 @@
 				<!-- Combo Box for styles such as underline, strikethrough, none. -->
 	      		<select>
 	  				<option value="text_styles">Underline</option>
+	  				<option value="text_styles_1">Strikethrough</option>
 				</select>
 
       			<!-- Below is the code for line spacing. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Line_Spacing">
+		    	<label for="Line_Spacing">Line Spacing</label>
       		</div>
 
       	</div>
