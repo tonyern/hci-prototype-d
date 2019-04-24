@@ -13,7 +13,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
   <body>
@@ -22,9 +23,10 @@
   	  	https://www.w3schools.com/howto/howto_css_two_columns.asp -->
       <div class="row">
 
+      	<!-- Left side column. -->
       	<div class="column">
 
-      		<div>
+      		<div class="section">
       			<strong>Fonts</strong>
       		</div>
 
@@ -65,17 +67,25 @@
 		    </div>
 
 		    <div class="section">
-		    	<button><strong>X_2</strong></button>
-		    	<button><strong>X^2</strong></button>
+		    	<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-subscript"></span></button>
+		    	<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-superscript"></span></button>
 		    </div>
 
 		    <div class="section">
-		    	<button><strong>Horizontal Alignment</strong></button>
-		    	<button><strong>Vertical Alignment</strong></button>
+		    	<label>
+		    		<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-option-horizontal"></span></button>
+		    		Horizontal Alignment
+		    	</label>
+
+		    	<label>
+		    	    <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-option-vertical"></span></button>
+
+		    	    Vertical Alignment
+		        </label>
 		    </div>
 
 		    <div class="section">
-		    	<button><strong>Bullet Style</strong></button>
+		    	<button><i class="material-icons">format_list_bulleted</i></button>
 		    	<!-- Below is the code for bullet indentation. -->
 		    	<input type="number" min="0" max="50" step="2" value="0" size="6" name="Bullet_Indent">
 		    	<label for="Bullet_Indent">Bullet Indent</label>
@@ -98,26 +108,45 @@
 
       	</div>
 
+      	<!-- Right side column. -->
       	<div class="column">
 
-      		<div>
+      		<div class="section">
       			<strong>Styles</strong>
       		</div>
 
       		<div class="section">
-      			<button>Background Color</button>
+      			<button><i class="material-icons">format_color_fill</i></button>
       		</div>
 
       		<div class="section">
       			<!-- Combo Box for text color picking. -->
-	      		<select>
-	  				<option value="text_color">Text Color</option>
-				</select>
+	      		<label><select>
+	  				<option value="text_color_white">White</option>
+	  				<option value="text_color_black">Black</option>
+	  				<option value="text_color_purple">Purple</option>
+	  				<option value="text_color_brown">Brown</option>
+	  				<option value="text_color_blue">Blue</option>
+	  				<option value="text_color_green">Green</option>
+	  				<option value="text_color_red">Red</option>
+	  				<option value="text_color_orange">Orange</option>
+	  				<option value="text_color_yellow">Yellow</option>
+	  				<option value="text_color_pink">Pink</option>
+				</select> Text Color</label>
 
 				<!-- Combo Box for style color picking. -->
-	      		<select>
-	  				<option value="style_color">Style Color</option>
-				</select>
+	      		<label><select>
+	  				<option value="text_color_white">White</option>
+	  				<option value="text_color_black">Black</option>
+	  				<option value="text_color_purple">Purple</option>
+	  				<option value="text_color_brown">Brown</option>
+	  				<option value="text_color_blue">Blue</option>
+	  				<option value="text_color_green">Green</option>
+	  				<option value="text_color_red">Red</option>
+	  				<option value="text_color_orange">Orange</option>
+	  				<option value="text_color_yellow">Yellow</option>
+	  				<option value="text_color_pink">Pink</option>
+				</select> Style Color </label>
 
 				<!-- Combo Box for ligtures. -->
 	      		<select>
@@ -127,11 +156,10 @@
 
       		<div class="section">
       			<!-- Combo Box for text color picking. -->
-	      		<select>
-	  				<option value="hyphenation">Hyphenation</option>
+	      		<label><select>
 	  				<option value="hyphenation_yes">Yes</option>
 	  				<option value="hyphenation_no">No</option>
-				</select>
+				</select> Hyphenation</label>
 
 				<!-- Combo Box for styles such as underline, strikethrough, none. -->
 	      		<select>
